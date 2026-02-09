@@ -4,30 +4,22 @@
    Coffee / Sepia Theme
    ============================================ */
 :root {
-  --bg-primary: #1e1109;
-  /* Deep Dark Coffee */
-  --bg-secondary: #2c1a10;
-  /* Lighter Coffee */
-  --text-primary: #e5d0ac;
-  /* Latte / Cream */
-  --text-secondary: #c9a66b;
-  /* Tan */
-  --text-muted: #8d6e4b;
-  /* Darker Tan */
-  --accent: #f4a460;
-  /* Sandy Brown */
-  --border: #5d4037;
-  /* Brown Border */
+  --bg-primary: #09090b;
+  /* Soft shade of black */
+  --bg-secondary: #18181b;
+  /* Slightly lighter black */
+  --text-primary: #fafafa;
+  /* Off-white */
+  --text-secondary: #a1a1aa;
+  --text-muted: #52525b;
+  --accent: #ffffff;
+  --border: #27272a;
 
-  /* Status Colors (Muted for Sepia Tone) */
-  --status-green: #6bc96b;
-  /* Mute Green */
-  --status-orange: #f4a460;
-  /* Sandy Orange */
-  --status-red: #d9534f;
-  /* Mute Red */
-  --status-gray: #8d6e4b;
-  /* Brown Gray */
+  /* Status Colors - Corrected for Dark Theme */
+  --status-green: #22c55e;
+  --status-orange: #f59e0b;
+  --status-red: #ef4444;
+  --status-gray: #52525b;
 }
 
 /* CRT Scanline Overlay */
@@ -45,7 +37,7 @@
   background-size: 100% 4px;
   pointer-events: none;
   z-index: 9999;
-  opacity: 0.3;
+  opacity: 0.15;
 }
 
 /* Status Dots */
@@ -127,6 +119,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.05em;
   color: var(--text-primary);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .site-nav {
@@ -471,7 +464,7 @@ body {
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .ascii-art {
@@ -480,7 +473,7 @@ body {
   font-size: 10px;
   line-height: 1.1;
   white-space: pre;
-  color: #ffffff;
+  color: var(--text-primary);
   user-select: none;
 }
 
